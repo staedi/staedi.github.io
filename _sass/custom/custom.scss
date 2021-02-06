@@ -1,8 +1,6 @@
-.main_content {
+.main-content {
     blockquote {
-        // padding: .5rem 1rem;
-        // margin: .8rem 0;
-        color: $grey-dk-000;
-        border-left: .25rem solid $border-color;
+        padding: $sp-2 $sp-4;
+        border-left: $sp-1 solid $border-color;
     }  
 }
