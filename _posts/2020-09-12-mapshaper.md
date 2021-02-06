@@ -1,11 +1,9 @@
 ---
 layout: post
 title:  "Mapshaper"
+last_modified_date: 2021-02-06
 categories: [dev, gis]
 tags: [GIS, mapshaper, geojson, shp, json]
-nav_order: 9
-parent: Dev
-grand_parent: Posts
 ---
 
 >

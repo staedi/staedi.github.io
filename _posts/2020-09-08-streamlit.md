@@ -1,17 +1,15 @@
 ---
 layout: post
-title:  "Streamlit over others"
+title:  "Streamlit for dashboard building"
+last_modified_date: 2021-02-06
 categories: [dev]
 tags: [python, streamlit, dashboard]
-nav_order: 7
-parent: Dev
-grand_parent: Posts
 ---
 
 **Disclaimer**: Before I begin, I should point out I'm **NOT** working for [Streamlit](https://streamlit.io). I'm just a lazy developer (if I could describe myself as such), who has just become addicted with this tool.
 
 
-> If you use `Python` for *data visualization* purposes, you might have already known [Plot.ly](https://plotly.com), one of the most used interactive graphic modules available both in `R` and `Python`. If that's the case, you also may have visited its website and heard about [Dash](https://plotly.com/dash), an interactive web dashboard building tool made by them.
+> If you use `Python` for *data visualization* purposes, you might already know [Plot.ly](https://plotly.com), one of the most used interactive graphic modules available both in `R` and `Python`. If that's the case, you also may have visited its website and heard about [Dash](https://plotly.com/dash), an interactive web dashboard building tool made by them.
 
 That someone was me. Although I've never used `Plot.ly` yet (even until now), I've visited the site several times and spotted their ad for Dash every time I do.
 

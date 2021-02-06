@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Using custom-built mecab-ko-dic in Python eunjeon (은전) module"
+title:  "Deploying user-dict (mecab-ko-dic) in Python eunjeon (은전) module"
+last_modified_date: 2021-02-06
 categories: [dev]
 tags: [python, Mecab, mecab-ko-dic, mecab-ko, eunjeon]
 ---
@@ -11,18 +12,24 @@ tags: [python, Mecab, mecab-ko-dic, mecab-ko, eunjeon]
 ## Mecab
 
 Mecab, a NLP module based on Japanese NLP one, definitely stands out among others, due to its high performance. Unlike many others, it doesn't depend on JDK. I was mind-blown when I first switched from `Komoran`, a JDK-based module to `Mecab`. The running time of analyses with the same documents, was from a few hours to less than 5 minutes!
-However, Mecab isn't available on Windows as the installation process includes shell scripts.
+
+However, Mecab isn't available on Windows as the installation process includes *nix shell scripts.
 
 
 ## Eunjeon (은전)
 
-One notable module which aims to make Mecab run on Windows is `pyeunjeon`. Like many other modules, once installed, it is recognized by `eunjeon` when **importing**.
-On windows, you just install python module, and you're ready to go.
+One notable module which aims to make Mecab run on Windows is `pyeunjeon`. Like many other modules, once installed, it is recognized by `eunjeon` in Python just as below. 
+
+```py
+import eunjeon
+```
+
+On windows, you just install python module, and you're ready to go. (As it wouldn't be possible in Windows system to run shell scripts made for *nix platforms.)
 
 
 ## Any catch?
 
-As the title implies, there's a catch obviously. With `eunjeon` module, you can't build custom-dict. It is usually done with `mecab-ko-dict`, which is excluded in `eunjeon`.
+As the title implies, there's a catch obviously. With `eunjeon` module, you can't build your own dictionary. It is usually the role of `mecab-ko-dict`, which is excluded in `eunjeon`.
 
 
 ## No workarounds?
@@ -36,4 +43,4 @@ After compilations, `mecab-ko-dic` produces five fresh dictionary files.
 * sys.dic
 * unk.dic
 
-By transferring these, you can enjoy the same user dictionary as in Mac or Unix-based systems.
+By transferring these, you can enjoy the same user dictionary as in Mac or *nix-based systems.

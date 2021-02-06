@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "Geojson with MultiPolygon to Polygon conversion"
+title:  "Simplifying MultiPolygon to Polygon in Geojson"
+last_modified_date: 2021-02-06
 categories: [dev]
 tags: [python, geojson, json, GIS, Polygons]
-nav_order: 12
-parent: Dev
-grand_parent: Posts
 ---
 
-Anyone who wants to do some Chropleth, or color maps, need to have proper GIS shapefiles. They're simply collections of cooridnates of each boundary. Depending on the complexity of geography, they either contain `MultiPolygon` or `Polygon`. 
+Anyone who wants to map **Choropleths**, or color maps, need to have proper GIS shapefiles. They're simply collections of cooridnates of each boundary. Depending on the complexity of geography, they either contain `MultiPolygon` or `Polygon`. 
 
 ### MultiPolygon and Polygon geometry
 

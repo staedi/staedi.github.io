@@ -1,20 +1,21 @@
 ---
 layout: post
-title:  "Visualization of Seoul Metropolitan subway usages"
+title:  "Visualizing Seoul Metropolitan subway riderships"
+last_modified_date: 2021-02-06
 categories: [works]
 tags: [python, pydeck]
 ---
 
-The visualization of the transportation usages is often one of the most commonly done by fellas. This involves a range of visualization techniques from simple **scatterplot** to more involved abstract **graphs**.
+The visualization of the transportation usages is often one of the most commonly done by researchers. This involves a range of visualization techniques from simple **scatterplot** to more involved abstract **graphs**.
 
 ## Motivation
 
-Yesterday, by chance, I came across one phenomenal website, [Visualizing MBTA Data](http://mbtaviz.github.io/#trains), which made use of `D3.js` and pretty aesthetically appealing along with lots of efforts involved. This intrigued me of making animated **scatterplot** using my favorite, `Pydeck`.
+Yesterday, by chance, I came across one phenomenal website, [Visualizing MBTA Data](http://mbtaviz.github.io/#trains), which made use of `D3.js` and pretty aesthetically appealing along with painstaking efforts involved. This intrigued me of making animated **scatterplot** using my favorite, `Pydeck`.
 
 
 ## Initial method
 
-After combing through gallery sections of [Pydeck](https://deckgl.readthedocs.io), I initially thought Pathlayer would work. On top of subway network lines, I might be able to draw stations with varying sizes according to the number of passengers.
+After combing through gallery sections of [Pydeck](https://deckgl.readthedocs.io), I initially thought **Pathlayer** would do trick. On top of subway network lines, I might be able to draw stations with varying sizes according to the number of passengers.
 
 ![](https://deckgl.readthedocs.io/en/latest/_images/path_layer.png)
 Source: https://deckgl.readthedocs.io
@@ -31,4 +32,4 @@ So, I found another viable solution which has been widely used, namely, *Animate
 
 ## Drawbacks
 
-Aside from the fact that, the approach wasn't my original plan, the data structure was not up what we usually see globally, just like in famous MTA dataset. That is, it would have been much better if I could see daily usage changes, which wasn't possible due to data is only available on daily basis.
+Unfortunately, the data structure was not up to what we usually see globally, just like in famous MTA dataset. That is, it would have been much better if I could see daily usage changes, which wasn't possible due to data is only available on daily basis.

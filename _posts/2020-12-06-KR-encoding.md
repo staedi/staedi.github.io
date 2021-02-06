@@ -1,22 +1,20 @@
 ---
 layout: post
 title:  "Encoding in Python of KR"
+last_modified_date: 2021-02-06
 categories: [dev]
 tags: [python, encoding, utf-8, utf-8-sig, euc-kr]
-nav_order: 16
-parent: Dev
-grand_parent: Posts
 ---
 
-To many data analyses practitioners using non-western characters, encoding issue gives them never-ending headache.
+To many data analyses practitioners using non-western characters, encoding issue gives them never-ending headaches.
 This is because the same characters, seen from the viewers' perspectives, aren't interpreted as the same by the machines.
 
 ## Why issue?
 
-Due to the early de facto standard by Microsoft Windows and Office systems, `euc-kr` or `cp-949` has been the norm in this language.
+Due to the early de-facto standard by Microsoft Windows and Office systems, `euc-kr` or `cp-949` has been the norm in Korean Language.
 While the two are technically different, `cp-949` is the superset of the other, many can safely use `euc-kr` in many cases.
 
-However, this very de facto standard makes the machine confusing as these are not in the realm of unicode system.
+However, this very de-facto standard makes the machine confusing as these are not in the realm of unicode system.
 
 The most widely used unicode encoding, `utf-8` can't recognize those made with these, and complains.
 

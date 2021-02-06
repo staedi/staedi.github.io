@@ -1,25 +1,25 @@
 ---
 layout: post
 title:  "Google Colab for Machine Learning"
+last_modified_date: 2021-02-06
 categories: [dev]
 tags: [colab, AWS, jupyter]
-nav_order: 13
-parent: Dev
-grand_parent: Posts
 ---
 
 ## Why GPU?
-If you're been in the world of Machine Learning or more preferrably, Deep Learning for a while, you may acknowledge the need of GPU-enabled computing systems. 
-This is a no-brainer as GPU can drastically reduce the run time of the training processes. The same process, which would take more than hours, can be done within a few minutes.
+If you're been in the world of Machine Learning or Deep Learning, more specifically, you definitely understand the necessity of GPU-enabled computing systems. 
+This is a no-brainer as GPU or TPU (Tensorflow-centric Processing Units) can drastically reduce the run time of the training processes. The same process, which would take more than hours, can be done within a few minutes.
 
 But, if you're a Mac user, the choice is limited to Cloud-based systems only as main-stream deep learning platform, `Tensorflow` and `Pytorch` only supports NVDIA's GPU, which Apple in its Mac platforms stopped to adopt for a long time. 
 
 ## Why Colab?
-There are several options for who don't have computers equipped with compatible GPUs. Arguably, the most famous one should be [Amazon Web Services](https://aws.amazon.com). While it is well-known and used by numerous parties, it isn't free.
+There are several options for who don't have computers equipped with compatible GPUs. Arguably, the most popular one would be [Amazon Web Services](https://aws.amazon.com). While it is well-known and used by numerous parties, it isn't free.
 
-So, if you're tight on budget or don't want to spend on it, it's not for you.
+So, if you're tight on budget or don't want to spend on it at all, it's not for you.
 
-Fortunately, Google has a free-for-use [Colab](http://colab.research.google.com/), short for Colaboratory. While there might be limits for usage, it's good for casual uses.
+Fortunately, Google has a free-for-use [Colab](https://colab.research.google.com/), short for Colaboratory. While there might be limits for usage, it's good for casual uses.
+
+> Note: Google also has services which charge fees, [Google Cloud Platform](https://cloud.google.com).
 
 
 ## How to use?
