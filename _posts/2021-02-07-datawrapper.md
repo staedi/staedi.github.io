@@ -2,7 +2,7 @@
 layout: post
 title:  "Datawrapper, an effortless way of data visualization"
 categories: [dataviz]
-tags: [python, datawrapper, dataviz]
+tags: [python, datawrapper, dataviz, tableau, R, ggplot2, PowerBI, D3.js, plot.ly]
 ---
 
 ## Disclaimer
