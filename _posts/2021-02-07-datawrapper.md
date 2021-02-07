@@ -5,7 +5,7 @@ categories: [dataviz]
 tags: [python, datawrapper, dataviz, tableau, R, ggplot2, PowerBI, D3.js, plot.ly]
 ---
 
-## Disclaimer
+### Disclaimer
 I'm not affiliated with Datawrapper team, in any way. I'm just a user who just got fascinated with this site. 
 
 
