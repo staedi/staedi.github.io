@@ -22,7 +22,7 @@ Procedures are simple enough.
 * Restart and copy `Battery.menu` file into `System/Library/CoreServices/Menu Extras`.
 * Run `killall SystemUIServer`, which will reload menu items.
 
-![](https://github.com/staedi/staedi.github.io/raw/master/images/BatteryMenu.png)
+![](https://github.com/staedi/staedi.github.io/raw/main/images/BatteryMenu.png)
 
 Done.
 Et voila!
