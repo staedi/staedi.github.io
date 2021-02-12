@@ -5,7 +5,7 @@ categories: [dev]
 tags: [mac, launchd]
 ---
 
-In previous [article]({% post_url 2020-09-03-launchd.md %}), I mentioned the use of `launchd` on Mac in place of `crontab`.
+In previous [article]({% post_url 2020-09-03-launchd %}), I mentioned the use of `launchd` on Mac in place of `crontab`.
 
 In that post, I showed how one create the `.plist` file and register with `launchd`. 
 
