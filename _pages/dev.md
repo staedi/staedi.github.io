@@ -20,7 +20,7 @@ parent: Articles
 {% endfor %} -->
 
 <ul>
-  {% assign sorted-posts = site.posts | sort_by: 'last_modified_date', 'post_date' %}
+  {% assign sorted-posts = site.posts | sort_by: 'post_date' %}
   {% for post in sorted-posts %}{% if post.draft != true %}
   {% if post.categories[0] == 'dev' %}
     <li>
