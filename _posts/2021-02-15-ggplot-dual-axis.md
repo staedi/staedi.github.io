@@ -46,5 +46,3 @@ The syntax is as follows.
 ```
 
 Note that the transformed one, i.e., having larger-range dataset, is to be on secondary axis.
-
-<img src='https://github.com/staedi/staedi.github.io/raw/main/images/SPX.svg' width='75%' height='75%'>
