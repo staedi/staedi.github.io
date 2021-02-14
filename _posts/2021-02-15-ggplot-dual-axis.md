@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Dual axis on `ggplot2`"
+title:  "Dual axis on <code>ggplot2</code>"
 categories: [dataviz]
 tags: [dataviz, R, ggplot2, dualaxis]
 ---
 
-### Dual Axis
+## Dual Axis
 Dual axis is a feature that yields serious-looking charts so that advanced-level are expected to know how to produce them. In the same time, it's controversial among practitioners that many try to make less use of.
 
 ## Why controversial?
@@ -14,11 +14,10 @@ While Dual axis chart looks more condensed by combining multiple graphs in one p
 ## Why not just avoiding it?
 Despite its drawbacks, clearly, there are situations that we can't just ditch the use of dual-axis. For instance, we often want to investigate the relationships between two different features. It's not so effective when we have two separate plots as our eyes have to roll between them.
 
-## `ggplot2`
+## Dual axis on `ggplot2`
 `ggplot2`, a popular graphic library in `R` is my favorite one. While I don't use `R` on a daily basis, `ggplot` keeps me from abandoning `R` entirely and jumping to `Python`. Not to mention *seaborn* or *matplotlib*, no graphing tools can win over `ggplot2` for its visual appeal and straightforward grammar.
 
-## Dual axis on `ggplot2`
-Unlike in other popular graphing tools, `ggplot2` doesn't provide an automatic way to create dual axis. In other words, when implementing it, one has to transform the range of one axis to that of the other. This is not how other tools make dual axis. In Excel for instance, when you add an additional y-axis, the range is automatically adjusted with the selected data.
+However, unlike other popular graphing tools, `ggplot2` doesn't provide an automatic way to create dual axis. In other words, when implementing it, one has to transform the range of one axis to that of the other. This is not how other tools make dual axis. In Excel for instance, when you add an additional y-axis, the range is automatically adjusted with the selected data.
 
 
 ### Calculating the range
@@ -33,7 +32,7 @@ Conceptually, the adjustment is done as follows. (Making the **larger-range** da
 
 
 ### How it's done in `ggplot2`
-Enough has been said for theory.
+Enough for the theory. <br />
 To transform the process, the last step involves making use of `sec.axis` inside `scale_y_continuous`. Obviously, `sec.axis` means secondary axis.
 
 The syntax is as follows.
@@ -48,4 +47,4 @@ The syntax is as follows.
 
 Note that the transformed one, i.e., having larger-range dataset, is to be on secondary axis.
 
-![SPX](https://github.com/staedi/staedi.github.io/raw/main/images/SPX.svg)
+<img src='https://github.com/staedi/staedi.github.io/raw/main/images/SPX.svg' width='75%' height='75%'>
