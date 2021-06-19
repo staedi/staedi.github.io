@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Building COVID-19 Infections & Vaccinations Dashboard"
+last_modified_date: 2021-06-20
 categories: [works]
 tags: [python, pydeck, altair, streamlit, choropleth, vaccinations, infections, heatmap, barplot]
 ---
@@ -52,7 +53,7 @@ In addition, to keep the number of charts smaller, I stacked vaccination data in
 ![](https://github.com/staedi/Streamlit_nCov19/raw/master/samples/heatmap_vaccinations.png)
 
 ### Stacked barplot (Country-level vaccinations-only)
-![](https://github.com/staedi/Streamlit_nCov19/raw/master/samples/stackedbar-vaccinations.png)
+![](https://github.com/staedi/Streamlit_nCov19/raw/master/samples/stackedbar_vaccinations.png)
 
 ### Choropleth (Vaccinations)
-![](https://github.com/staedi/Streamlit_nCov19/raw/master/samples/choropleth-vaccinations.png)
+![](https://github.com/staedi/Streamlit_nCov19/raw/master/samples/choropleth_vaccinations.png)
