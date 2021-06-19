@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Building Covid-19 Situation Awareness Dashboard"
-last_modified_date: 2021-02-06
+title:  "Building COVID-19 Situation Awareness Dashboard"
+last_modified_date: 2021-06-19
 categories: [works]
 tags: [python, pydeck, altair, streamlit, choropleth]
 ---
 
-It's already been more than 6 months since Covid-19 upended the global community. While it's frustrating reality to live in, it also opened doors to many researchers/developers outside epidemiologies to hone their data analysis and visualization skills, including myself.
+It's already been more than 6 months since COVID-19 upended the global community. While it's frustrating reality to live in, it also opened doors to many researchers/developers outside epidemiologies to hone their data analysis and visualization skills, including myself.
 
 ## Motivation
 
-Like many others, I, initially was content with the *Johns Hopkins University*'s famous [Covid-19 Dashboard](https://coronavirus.jhu.edu/map.html). It was a go-to place for folks to get to know up-to-date global statistics of the pandemics.
+Like many others, I, initially was content with the *Johns Hopkins University*'s famous [COVID-19 Dashboard](https://coronavirus.jhu.edu/map.html). It was a go-to place for folks to get to know up-to-date global statistics of the pandemics.
 
 However, I began to sense that the visualization was somewhat not up to my expectation as it used scatter plot for worldwide infection status. Due to the exploding number of global clusters, the scatter couldn't be distinguished from each other, __the inherent drawback of scatterplot__.
 
