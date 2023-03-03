@@ -1,0 +1,13 @@
+---
+type: tag
+title: Categorized Articles
+---
+
+import { useRouter } from 'next/router'
+
+export const TagName = () => {
+  const { tag } = useRouter().query
+  return tag || null
+}
+
+## Articles Categorized as “<TagName/>”
