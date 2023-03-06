@@ -1,6 +1,7 @@
 ---
-type: tag
+type: posts
 title: Articles
+date: 2021-03-18
 ---
 
 import { useBlogContext } from 'components/blog-context'
@@ -11,24 +12,18 @@ import { useRouter } from 'next/router'
 export const TagList = () => {
   const { config, opts } = useBlogContext()
   const { posts } = collectPostsAndNavs({ config, opts })
-  let tags = Array.from(new Set(posts.map(post => {return post.frontMatter?.tag})))
+  const tags = Array.from(new Set(posts.map(post => {return post.frontMatter?.tag})))
   tags.splice(0,0,'All')
 
   return tags
 }
 
-export const TagName = () => {
-  const { tag } = useRouter().query
-  return tag || null
-}
-
 export const TagEmbed = () => {
   const tags = TagList()
-  const tag_name = TagName()
 
   const tagsViz = tags.map(t => {
     return (
-        t === tag_name ?
+        t === 'All' ?
         <span>
           <span
             className="
@@ -43,32 +38,6 @@ export const TagEmbed = () => {
             >
             <strong>{t}</strong>
           </span>
-          &nbsp;
-        </span>
-        :
-        t === 'All' ? 
-        <span>
-          <Link key={t} href="/posts" passHref legacyBehavior>
-            <a
-            className="
-                nx-select-none
-                nx-rounded-md
-                nx-bg-gray-200
-                nx-px-1
-                nx-text-sm
-                nx-text-gray-400
-                nx-transition-colors
-                hover:nx-bg-gray-300
-                hover:nx-text-gray-500
-                dark:nx-bg-gray-600
-                dark:nx-text-gray-300
-                dark:hover:nx-bg-gray-700
-                dark:hover:nx-text-gray-200
-            "
-            >
-            {t}
-            </a>
-          </Link>
           &nbsp;
         </span>
         :

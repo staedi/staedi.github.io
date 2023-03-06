@@ -1,6 +1,6 @@
 const YEAR = new Date().getFullYear()
 
-export default {
+export const DEFAULT_THEME = {
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
       <abbr
