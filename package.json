@@ -1,14 +1,15 @@
 {
 	"private": true,
 	"scripts": {
-	  "dev": "next dev",
-	  "build": "node ./scripts/gen-rss.js && next build",
-	  "export": "next export",
-	  "start": "next start"
+		"dev": "next dev",
+		"build": "node ./scripts/gen-rss.js && next build",
+		"export": "next export",
+		"start": "next start"
 	},
-	  "dependencies": {
+	"dependencies": {
 		"gray-matter": "^4.0.3",
 		"next": "^13.2.3",
+		"next-themes": "^0.2.1",
 		"nextra": "^2.2.17",
 		"nextra-theme-blog": "^2.2.17",
 		"react": "^18.2.0",
