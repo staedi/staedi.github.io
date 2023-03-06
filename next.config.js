@@ -1,5 +1,5 @@
 const withNextra = require('nextra')({
-  theme: 'nextra-theme-blog',
+  theme: './theme.tsx',
   themeConfig: './theme.config.tsx',
   staticImage: true,
   defaultShowCopyCode: true,
