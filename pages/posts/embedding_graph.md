@@ -55,4 +55,4 @@ For the clarity, 2-D vectors are used to cluster which group each term would be 
 
 Now, let's see what we did.
 
-![Trending 5 words](https://github.com/staedi/staedi.github.io/raw/main/images/2021_43_rolling_5.png)
+![Trending 5 words](/images/2021_43_rolling_5.png)

@@ -7,7 +7,7 @@ description: How to embed Datawrapper Chart in Streamlit (or else in general)
 ---
 
 
-Last year, I introduced my fascination of [Datawrapper](https://datawrapper.de) in the [article]({% post_url 2021-02-07-datawrapper %}). For free, `Datawrapper` provides various forms of beautifully articulated interactive charts, for me, which no visualization library in Python can beat. It even offers API-based creation of charts.
+Last year, I introduced my fascination of [Datawrapper](https://datawrapper.de) in the [article](datawrapper). For free, `Datawrapper` provides various forms of beautifully articulated interactive charts, for me, which no visualization library in Python can beat. It even offers API-based creation of charts.
 
 At the time, I was looking for a way to use the charts in [Streamlit](https://streamlit.io) natively just like using other visualization libraries in Python (such as [Altair](https://altair-viz-github.io)).
 
@@ -18,7 +18,7 @@ Recently, while I was looking for a different form of visualization at `Datawrap
 Fortunately, `Streamlit` provides two ways of embeding a html or iframe in the page. Namely, `components.html()` and `components.iframe()`.
 
 
-### Components.html()
+## Components.html()
 
 ```py
 import streamlit as st
@@ -32,7 +32,7 @@ As shown above, when using `components.html()`, full html tags are needed rather
 *Caution: Even if the html tag contains the height specification, `Components.html()` does not respect it. You should explicitly set it with **height** parameter value.
 
 
-### Components.iframe()
+## Components.iframe()
 
 ```py
 import streamlit as st
@@ -44,12 +44,12 @@ components.iframe('https://somewebsite.com',height=some height,scrolling=True)
 Unlike `Components.html()`, this does not require the full html tags, rather just the page URL. As before, and obviously, you should set the height option explicitly. Other than specifying the page URL, other options are the same.
 
 
-### OK, How to get the link?
+## OK, How to get the link?
 
 With the previous explanation, you might agree that you would use `Components.iframe()`, which I use.
 
 In that case, from the following image, you copy the link under *Link to your visualiztion* with **Visualization only** radio button selected.
 
-![](https://github.com/staedi/staedi.github.io/raw/main/images/dw_publish.png)
+![](/images/dw_publish.png)
 
 Be sure to republish after you modify your visualization if you want to keep it updated in your webpage or `Streamlit` application. Otherwise, the embed page points to the previously version of visualization.

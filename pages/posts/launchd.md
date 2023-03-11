@@ -5,6 +5,7 @@ tag: Miscellaneous
 tags: [mac, git, launchd, crontab]
 description: An intelligent way to schedule jobs on Mac
 ---
+
 It is often said that `crontab` is the simplest tool to set up a scheduling job on Unix-based systems including Mac. However, from my own experience, I learned a lard lesson that how could that supposedly simple job is not indeed.  
 
 Obviously, it should be. The process should be as straightforward as the word simple says.

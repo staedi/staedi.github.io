@@ -7,9 +7,9 @@ description: How to use Docker to deploy Airflow on Windows
 ---
 
 
-Previously, I introduced that [Airflow](https://airflow.apache.org) was now available in Apple Silicon in this [article]({% post_url 2022-08-10-airflow %}) (from version 2.3). 
+From version 2.3, [Airflow](https://airflow.apache.org) has been available in Apple Silicon. 
 
-But then, I did not think thoroughly about the possibliity of using **Airflow** in Windows operating systems as it is designed with nix-based OS in mind. 
+Unfortunately, using **Airflow** in Windows operating systems is a different matter as it doesn't natively support the Microsoft's operating system. 
 
 However, it is not entirely true, as I learned that **Airflow** can be used with the [Docker](https://docker.com).
 In a word, with `Docker WSL 2` installed (by default), Windows users can use the nix-based commands easily. In other words, **Airflow** commands can be used in **Windows** as well.
@@ -72,7 +72,7 @@ d9d8ddb4fd60   apache/airflow:2.4.3   "/usr/bin/dumb-init …"   31 hours ago   
 
 Looks good, with this, you can now access Airflow Admin GUI with https://localhost:8080.
 
-![](https://github.com/staedi/staedi.github.io/raw/main/images/airflow.png)
+![](public/images/airflow.png)
 
 ### Airflow CLIs (dags list)
 

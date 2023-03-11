@@ -20,8 +20,8 @@ It turned out that Apple beefed up the security, thereby annoying users requirin
 
 Both the culprit and solution were simple. The `.plist` files I copied from El Capitan had **Read & Write** permissions for non-owner, not **Read** only. 
 
-![Before](https://github.com/staedi/staedi.github.io/raw/main/images/readwrite.png)
+![Before](/images/readwrite.png)
 
 Naturally, the solution was stripping **Write** permission away from but the owner.
 
-![After](https://github.com/staedi/staedi.github.io/raw/main/images/read.png)
+![After](/images/read.png)

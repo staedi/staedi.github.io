@@ -8,7 +8,7 @@ description: "It's time to use logging especially for Airflow"
 
 It's been about a month since I delved into **Airflow**. Overall, I am satisfied (or overwhelmed) by the vast functionality it opened the door for me.
 
-Having said that, **Airflow** is never an easy solution to begin with. Rather, it requires its users to be equipped with its weird (at least for me) sense of time concept. See my last [post]({% post_url 2022-12-01-airflow-times %}) about that.
+Having said that, **Airflow** is never an easy solution to begin with. Rather, it requires its users to be equipped with its weird (at least for me) sense of time concept. See my last [post](airflow-times) about that.
 
 Unfortunately, it's not the only hardship at all.
 

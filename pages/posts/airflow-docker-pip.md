@@ -6,7 +6,7 @@ tags: [airflow, docker, pip, python, docker-compose]
 description: How to install Python libraries in Docker-deployed Airflow
 ---
 
-In the last article, I introduced to use [Airflow](https://airflow.apache.org) in *Windows OS* with [Docker](https://docker.com).
+In the last [article](airflow-docker), I introduced to use [Airflow](https://airflow.apache.org) in *Windows OS* with [Docker](https://docker.com).
 Although it might work fine for **bash**-based jobs, its ability to handle Python can be (obvisouly) restricted with the availability of libraries. 
 
 Unless otherwise specified, Docker-based Airflow installation doesn't install libraries you might need other than default by Airflow.

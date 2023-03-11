@@ -33,4 +33,4 @@ Then, Notebook can now recognize `R` once restarted.
 *Voila!*
 `R` is now enabled in the Jupyter Notebook
 
-![](https://github.com/staedi/staedi.github.io/raw/main/images/r_notebook.png)
+![](/images/r_notebook.png)

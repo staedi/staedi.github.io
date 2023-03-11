@@ -53,12 +53,12 @@ Namely, the step is as follows.
 ### Data Preparation
 You can simply upload your data unless you choose to copy & paste in the cells. In case you just wanna try it out, you can play with sample dataset provided by the Datawrapper team. After the data is successfully uploaded, the page is automatically refreshed and you can proceed to the next step.
 
-![Data Preparation](https://github.com/staedi/staedi.github.io/raw/main/images/dw_data.png)
+![Data Preparation](/images/dw_data.png)
 
 ### Verifying Dataset
 In this stage, in addition to verifying if the dataset is in order, you  might choose which columns you want to draw in your chart or sort the dataset.
 
-![Verifying Dataset](https://github.com/staedi/staedi.github.io/raw/main/images/dw_verify.png)
+![Verifying Dataset](/images/dw_verify.png)
 
 ### Create a Chart 
 Obviously, this is the core step in this creative activity. As such, you go through multiple stages before getting the chart. You choose chart type, axes and chart components setting, add captions and so on. 
@@ -67,9 +67,9 @@ Chart type is where Datawrapper shines. It surely offers bunch of selections esp
 
 However, there's a caveat if you want to create a complex chart. Datawrapper team doesn't believe ~~dual-axis~~ is a good way of charting to viewers, therefore, it's out of the choice. It's the similar to the philosophy why `seaborn` doesn't provide **stacked** charts.
 
-![Chart type](https://github.com/staedi/staedi.github.io/raw/main/images/dw_chartypes.png)
+![Chart type](/images/dw_chartypes.png)
 
 ### Publish or Save
 As you finished creating the chart, you can either share to embed in a web page or save to graphic file (e.g., `.PNG` format). When you share it, you can fully make use of the interactive feature of the chart, while you loose that privilege otherwise, obviously (`.PNG` format is static). 
 
-![Sharing](https://github.com/staedi/staedi.github.io/raw/main/images/dw_share.png)
+![Sharing](/images/dw_share.png)

@@ -56,4 +56,4 @@ As described in the codes above, the basic steps are fairly standard.
 
 The most important part is **pull** command. When I tried to `commit` and `push` without `pull` even when I hadn't made changes remotely beforehand, this operation were rejected. Only after I added `pull` operation before `push` in my code, it worked.
 
-While it should be a straightforward step to register this on `crontab` to automate regular `git` operation, it didn't work to my favor. I resorted to `launchd` instead, about which I wrote in a separate [article]({% post_url 2020-09-03-launchd %}).
+While it should be a straightforward step to register this on `crontab` to automate regular `git` operation, it didn't work to my favor. I resorted to `launchd` instead, about which I wrote in a separate [article](launchd).

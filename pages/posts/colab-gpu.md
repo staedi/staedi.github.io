@@ -32,7 +32,7 @@ locale.getpreferredencoding = getpreferredencoding
 
 ## GPU option not sharing between cells 
 
-As mentioned in the [post]({% post_url 2023-02-15-spacy-m1 %}), `spaCy` can utilize GPU either with `spacy.prefer_gpu()` or `spacy.require_gpu()`, from which I **prefer** the first one (No pun intended).
+As mentioned in the [post](spacy-m1), `spaCy` can utilize GPU either with `spacy.prefer_gpu()` or `spacy.require_gpu()`, from which I **prefer** the first one (No pun intended).
 
 Howver, since GPU settings are not preserved between cells according to [spaCy](https://spacy.io/usage/v3#jupyter-notebook-gpu), extra care must be needed. 
 

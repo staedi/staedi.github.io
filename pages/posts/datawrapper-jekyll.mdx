@@ -1,0 +1,104 @@
+---
+title:  "Embedding Datawrapper Chart #2 (feat. MDX and Next.js)"
+date: 2023-03-10
+tag: Data Visualization
+tags: [next.js, datawrapper, github pages, jekyll, mdx, md]
+description: How to embed Datawrapper Chart in MDX Page
+---
+
+> 
+Note: This article has been rewritten to reflect necessary code changes in `Next.js` and `MDX` from `MD` in `Jekyll`.
+
+
+## Recap
+
+Previously, in this [article](datawrapper-streamlit), I showed how to embed [Datawrapper](https://datawrapper.de) chart in this [article](datawrapper-streamlit). 
+
+I embedded a screenshot of Datawrapper's **Publish visualiztion** for reference.
+
+Here it is again.
+
+![](/images/dw_publish.png)
+
+In that article, I recommended using the **visualization link** rather than the full html tags. However, in case of `MDX`, it's the other way around. You copy the **iframe code** and use it to embed the code in MDX. (Choose **Responsive iframe** radio button)
+
+>
+Datawrapper team recently (literally a few days prior to this writing) released a `javascript`-based embedding method in place of `iframe`. However, from my experience, it might break the layout of the `MDX` page.
+
+> 
+Therefore, I'll stick to the `iframe`-way.
+
+
+## How to embed in MDX, then?
+
+Embedding the code inside `MDX` on `Next.js` is a little bit complicated than inside `MD` on `Jekyll`.
+
+In the case of `Jekyll`, I could simply copy that `iframe` code inside the post.
+
+However, within `MDX`, it involves a few steps.
+* Retrieval of embedding script
+* Importing `next/script` module and setting `style` const variable
+* Conversion of the `<script>` tag into `<Script>`
+
+
+### Get the embedding script
+
+First obvious step is to get the embedding script from the visualization.
+
+The copied script should look like this (**resposive iframe**). 
+
+```js
+<iframe title="Weighted Sentiment Scores (Exchange)" aria-label="Dot Plot" id="datawrapper-chart-0bwFo" src="https://datawrapper.dwcdn.net/0bwFo/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="495"></iframe>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+```
+
+***Wait! It's not done yet.***
+
+If look closely, this script contains `iframe` and `script` tags. 
+
+While the first `iframe` tag needs not be modified (except **style** property in `Next.js`), `script` tag can be simplified.
+
+When it comes to the latter tag, Datawrapper team provides a script src that you can replace instead of this inline script.
+
+```js
+<script src="http://datawrapper.dwcdn.net/lib/embed.min.js" />
+```
+
+With this replacement, the script becomes
+
+```js showLineNumbers
+<iframe title="Weighted Sentiment Scores (Exchange)" aria-label="Dot Plot" id="datawrapper-chart-0bwFo" src="https://datawrapper.dwcdn.net/0bwFo/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="495"></iframe>
+<script src="http://datawrapper.dwcdn.net/lib/embed.min.js" />
+```
+
+
+### Next.js-specific steps
+
+`Next.js` recommends using `Script` from `next/script` in place of traditional `script` tag.
+
+```js
+import Script from 'next/script'
+```
+
+Additionally, `React.js` complains (which is the basis of `Next.js`) **style property** set as in string. It needs to be fed with a variable. It also warns about *frameborder* property preferring *frame**B**order*
+
+```js showLineNumbers
+export const style = "width: 0; min-width: 100% !important; border: none;";
+<iframe title="Weighted Sentiment Scores (Exchange)" aria-label="Dot Plot" id="datawrapper-chart-0bwFo" src="https://datawrapper.dwcdn.net/0bwFo/1/" scrolling="no" frameBorder="0" style={{style}} height="495"></iframe>
+<Script src="http://datawrapper.dwcdn.net/lib/embed.min.js" />
+```
+
+## How is it displayed in action?
+
+import Script from 'next/script'
+
+export const style = "width: 0; min-width: 100% !important; border: none;";
+
+<iframe title="Weighted Sentiment Scores (Exchange)" aria-label="Dot Plot" id="datawrapper-chart-0bwFo" src="https://datawrapper.dwcdn.net/0bwFo/1/" scrolling="no" frameBorder="0" style={{style}} height="495"></iframe>
+
+<Script src="http://datawrapper.dwcdn.net/lib/embed.min.js" />
+
+Voilà! 
+
+Unlike in the **Streamlit**'s `Component.iframe()` case, the **height** specification is respected here (As it should be with the fully-working *iframe* tag).

@@ -26,6 +26,6 @@ As can be seen from the below screenshot, interface is quite straightforward.
 * Import by *selecting* or *dragging and dropping* files
 * Export with the desired file formats
 
-![](https://github.com/staedi/staedi.github.io/raw/main/images/mapshaper.png)
+![](/images/mapshaper.png)
 
 With this tool, you can proceed with modifications to serve your own purposes. For instance, extracting certain regions from the whole file or converting *MultiPolygon* to *Single Polygon*, last but not least, reducing file sizes by **dissolving** and **simplifying**. In fact, the last ones are important for faster map loadings, especially for web uses.

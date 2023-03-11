@@ -6,7 +6,7 @@ tags: [airflow, datainterval, runafter]
 description: A simple introduction of confusing time concepts in Airflow
 ---
 
-In the last [post]({% post_url 2022-11-17-airflow-docker %}), I showed how to use [Airflow](https://airflow.apache.org) in Windows OS with [Docker](https://docker.com).
+In the last [post](airflow-docker), I showed how to use [Airflow](https://airflow.apache.org) in Windows OS with [Docker](https://docker.com).
 
 So, you're ready to dive into the world of **Airflow**. Basically, it provides you a way to better manage schedules (enabling more sophisticated scheduling than `crontab`). 
 
@@ -50,7 +50,7 @@ The time range we like to gather data has passed, so we now start the process.
 
 To sum up, these concepts can be drawn as follows.
 
-![](https://github.com/staedi/staedi.github.io/raw/main/images/airflow_time.png)
+![](public/images/airflow_time.png)
 
 Extending these concepts, when you see `last_start`, `last_end` or `next_start`, `next_end`, be mindful that all of these are part of `DataInterval`.
 

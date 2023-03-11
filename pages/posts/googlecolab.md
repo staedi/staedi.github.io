@@ -19,7 +19,7 @@ So, if you're tight on budget or don't want to spend on it at all, it's not for 
 
 Fortunately, Google has a free-for-use [Colab](https://colab.research.google.com/), short for Colaboratory. While there might be limits for usage, it's good for casual uses.
 
-> Note: Google also has services which charge fees, [Google Cloud Platform](https://cloud.google.com).
+> Note: Google also has services which charge, [Google Cloud Platform](https://cloud.google.com).
 
 
 ## How to use?
@@ -31,7 +31,7 @@ Only a small caveat is importing libraries or images into the file is a little b
 Colab notebooks can't recognize the image files in its subdirectories, so those in the markdown section aren't shown properly.
 The easiest workaround is to use images in a Github repository and import using `img` *tag*.
 
-![](https://github.com/staedi/staedi.github.io/raw/main/images/image_md.png)
+![](/images/image_md.png)
 
 ### Importing libraries
 
@@ -42,6 +42,6 @@ The process is like follows.
 * Change to desired directory in your Drive: e.g., `%cd '/content/drive/My Drive/Colab Notebooks/intro-to-pytorch'`
 * Import libraries: e.g., `import helper`
 
-![](https://github.com/staedi/staedi.github.io/raw/main/images/mount_drive.png)
+![](/images/mount_drive.png)
 
 Et voila!
