@@ -28,7 +28,7 @@ The styling of charts made with `Chart.js` is so compelling to lead me to test o
 Unfortunately, this very fact forced me to look for other options.
 
 
-### [Nivo](https://nivo.rocks) - Easy to use and large library of chart options
+### [Nivo](https://nivo.rocks) - Easy to use and provides a large library of chart options
 
 Another great option was **Nivo**. It's ***almost*** perfect except its styling was little bit at odds with me.
 
