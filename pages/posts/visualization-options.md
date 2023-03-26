@@ -21,7 +21,7 @@ However, it doesn't give a satisfactory visualization in terms of flexibility (e
 
 ### [Chart.js](https://chartjs.org) - Easy to use and visually compelling
 
-![Chart.js](/images/chartjs.png)
+![Chart.js](/images/chartjs.png) [^1]
 
 I've always wanted to learn this popular `Javascript` charting library barring `D3.js` since I got to know the existence of this library.
 
@@ -30,7 +30,7 @@ The styling of charts made with `Chart.js` is so compelling to lead me to test o
 Unfortunately, this very fact forced me to look for other options.
 
 
-### [Nivo](https://nivo.rocks) - Easy to use and provides a large library of chart options
+### [Nivo](https://nivo.rocks) - Easy to use with a large library of chart options
 
 ![Nivo](/images/nivo.png)
 
@@ -38,12 +38,14 @@ Another great option is **Nivo**. It's ***almost*** perfect except its styling w
 
 For a library with its abstration, `Nivo` provides a bunch of charting options, even **Tree** or **Circle Pack**, which are not available with most libraries.
 
+Another caveat is the lack of inherent support of a combined chart (e.g., line chart on top of bar chart). However, it now supports **layers** which enable users to combined different types of charts.
+
 
 ## Low-level (more flexible) libraries
 
 ### [D3.js](https://d3js.org) - Most comprehensive
 
-![D3.js](/images/d3.png)
+![D3.js](/images/d3.png) [^2]
 
 In terms of flexibility, no other chart libraries can beat `D3.js`. It is notoriously difficult to master (like `React.js`?) even to get started (unlike `React.js`).
 
@@ -79,3 +81,6 @@ Its low-level interface does not make my life drastically easier, it has flexibi
 
 
 I found these two latter libraries on the day of this writing, and am fully intend to test out `Visx` pretty soon. While I prefer the overall styling of `Potion.js`, I am afraid that its syntax might be out of sync with latest version of `D3.js`.
+
+[^1]: [By Chrispoth Pahmeyer on Observable](https://observablehq.com/@chrispahm/charts)
+[^2]: [D3 Gallery on Observable](https://observablehq.com/@d3/gallery)
