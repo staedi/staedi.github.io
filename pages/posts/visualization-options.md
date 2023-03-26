@@ -21,6 +21,8 @@ However, it doesn't give a satisfactory visualization in terms of flexibility (e
 
 ### [Chart.js](https://chartjs.org) - Easy to use and visually compelling
 
+![Chart.js](/images/chartjs.png)
+
 I've always wanted to learn this popular `Javascript` charting library barring `D3.js` since I got to know the existence of this library.
 
 The styling of charts made with `Chart.js` is so compelling to lead me to test out despite its lack of chart varieties. Besides, it is well applicable to `React.js` with [react-chartjs-2](http://react-chartjs-2.js.org/).
@@ -30,7 +32,9 @@ Unfortunately, this very fact forced me to look for other options.
 
 ### [Nivo](https://nivo.rocks) - Easy to use and provides a large library of chart options
 
-Another great option was **Nivo**. It's ***almost*** perfect except its styling was little bit at odds with me.
+![Nivo](/images/nivo.png)
+
+Another great option is **Nivo**. It's ***almost*** perfect except its styling was little bit at odds with me.
 
 For a library with its abstration, `Nivo` provides a bunch of charting options, even **Tree** or **Circle Pack**, which are not available with most libraries.
 
@@ -38,6 +42,8 @@ For a library with its abstration, `Nivo` provides a bunch of charting options, 
 ## Low-level (more flexible) libraries
 
 ### [D3.js](https://d3js.org) - Most comprehensive
+
+![D3.js](/images/d3.png)
 
 In terms of flexibility, no other chart libraries can beat `D3.js`. It is notoriously difficult to master (like `React.js`?) even to get started (unlike `React.js`).
 
@@ -50,9 +56,9 @@ As `D3.js`'s expressive grammar doesn't go well with the component-centric princ
 Many of codes are presented in **Observable notebooks** only complicate the matter (think of **Jupyter notebook** and `MLops`).
 
 
-### [Potion.js](https://potion.js) - (Seemingly) Discontinued low-level abstraction
+### [Potion.js](https://potion.js) - Discontinued(?) low-level abstraction
 
-It is one of options which provides low-level interface based on `D3.js`, rather than high-level wrappers such as `Chart.js`. Nevertheless, it claims to work well with `React.js`.
+It is one of options which provides low-level interface on top of `D3.js`, rather than **high-level wrappers** such as `Chart.js`. Nevertheless, it claims to work well with `React.js`.
 
 While it might not simplify the visualization process dramatically, its great integration with `React.js` would make the job easier than raw `D3.js`.
 
@@ -63,8 +69,13 @@ With its major version update, the syntax of `D3.js` is often overhauled that ma
 
 ### [Visx](http://airbnb.io/visx/) - My choice
 
-Similar to `Potion.js`, this low-level interface is based on `D3.js` perfectly compatible with `React.js`.
+![Visx](/images/visx.png)
+
+Similar to `Potion.js`, this low-level interface on top of `D3.js` perfectly compatible with `React.js`.
 
 This library was made by **Airbnb** and is maintained actively. As I trust `Airflow` (another module made by **Airbnb**), I have nothing but confidence on this library.
 
 Its low-level interface does not make my life drastically easier, it has flexibility however.
+
+
+I found these two latter libraries on the day of this writing, and am fully intend to test out `Visx` pretty soon. While I prefer the overall styling of `Potion.js`, I am afraid that its syntax might be out of sync with latest version of `D3.js`.
