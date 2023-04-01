@@ -1,8 +1,8 @@
 ---
-title:  "visx - A flexilble while better integration with React.js than D3.js"
+title:  "visx - A flexible while better integrated with React.js (than D3.js)"
 date: 2023-04-01
 tag: Data Visualization
-tags: [next.js, react.js d3.js, visx]
+tags: [next.js, react.js d3.js, visx, altair-viz]
 description: A brief introduction to visx by Airbnb Engineering
 ---
 
