@@ -22,7 +22,7 @@ However, it doesn't give a satisfactory visualization in terms of flexibility (e
 ### [Chart.js](https://chartjs.org) - Easy to use and visually compelling
 
 ![Chart.js](/images/chartjs.png)
-*[By Chrispoth Pahmeyer on Observable](https://observablehq.com/@chrispahm/charts)*
+[Source: Chrispoth Pahmeyer on Observable](https://observablehq.com/@chrispahm/charts)
 
 I've always wanted to learn this popular `Javascript` charting library barring `D3.js` since I got to know the existence of this library.
 
@@ -47,7 +47,7 @@ Another caveat is the lack of inherent support of a combined chart (e.g., line c
 ### [D3.js](https://d3js.org) - Most comprehensive
 
 ![D3.js](/images/d3.png)
-*[D3 Gallery on Observable](https://observablehq.com/@d3/gallery)*
+[Source: D3 Gallery on Observable](https://observablehq.com/@d3/gallery)
 
 In terms of flexibility, no other chart libraries can beat `D3.js`. It is notoriously difficult to master (like `React.js`?) even to get started (unlike `React.js`).
 
