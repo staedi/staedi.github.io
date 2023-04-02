@@ -71,6 +71,12 @@ The team already knew the problem but solving it would not be easy. Some solutio
 * Install version 2.18.0 (the last working version with Next.js)
 * Use dynamic import with next/dynamic with SSR disabled
 
+***Instead of***
+```js
+import MyLineChart from './MyLineChart';
+```
+
+***Try this***
 ```js
 import dynamic from 'next/dynamic';
 const MyLineChart = dynamic(() => import('./MyLineChart'), { ssr: false });
