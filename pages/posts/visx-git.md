@@ -38,7 +38,7 @@ Two solutions are available (among others).
 
 Even after that modification (skipping `tsconfig.json` while deploying), the resultant site doesn't look alright. 
 
-![Huh?](/images/basepath_not_set)
+![Huh?](/images/basepath_not_set.png)
 
 Where did the **CSS** go?
 
@@ -48,8 +48,7 @@ In that case, the deployed app cannot clearly figure out where the resources are
 
 The solution is pretty simple.
 
->
-Set the repo as the name of `basePath` option inside `module.exports`.
+> Set the repo as the name of `basePath` option inside `module.exports`.
 
 ```js
 module.exports = {
@@ -62,4 +61,4 @@ module.exports = {
 
 Voilà!
 
-![Huh!](/images/basepath_set)
+![Huh!](/images/basepath_set.png)
