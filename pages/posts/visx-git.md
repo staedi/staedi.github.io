@@ -20,7 +20,7 @@ However, when I tried to deploy another app with `visx` on `GitHub Pages`, the s
 
 However, when you import in a *tree-shaking way*, e.g., 
 
-```js pack.tsx
+```js filanme="pack.tsx"
 import { Group } from '@visx/group';
 ```
 
@@ -50,7 +50,7 @@ The solution is pretty simple.
 
 > Set the repo as the name of `basePath` option inside `module.exports`.
 
-```js
+```js filename="next.config.js"
 module.exports = {
   basePath: '/visx',
   images: {
