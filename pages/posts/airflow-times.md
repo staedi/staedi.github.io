@@ -50,7 +50,7 @@ The time range we like to gather data has passed, so we now start the process.
 
 To sum up, these concepts can be drawn as follows.
 
-![](public/images/airflow_time.png)
+![](/images/airflow_time.png)
 
 Extending these concepts, when you see `last_start`, `last_end` or `next_start`, `next_end`, be mindful that all of these are part of `DataInterval`.
 

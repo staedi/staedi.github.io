@@ -72,7 +72,7 @@ d9d8ddb4fd60   apache/airflow:2.4.3   "/usr/bin/dumb-init …"   31 hours ago   
 
 Looks good, with this, you can now access Airflow Admin GUI with https://localhost:8080.
 
-![](public/images/airflow.png)
+![](/images/airflow.png)
 
 ### Airflow CLIs (dags list)
 
