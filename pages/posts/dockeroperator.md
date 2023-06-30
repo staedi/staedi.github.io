@@ -1,6 +1,6 @@
 ---
 title:  "Using Docker within Airflow (DockerOperator)"
-date: 2023-06-29
+date: 2023-06-30
 tag: Development
 tags: [docker, airflow, dockeroperator]
 description: How to execute command within Docker image in Airflow
@@ -90,18 +90,18 @@ bertopic_docker
 
 Before moving on to parameter explanations, I'd like to point out the import statement of `DockerOperator`. 
 
-```py
+```py filename="Airflow 2.x"
 from airflow.providers.docker.operators.docker import DockerOperator
 ```
 
 If you googled or stackoverflowed, you might find it different from what you found on the net as follows.
 
-```py
+```py filename="Airflow 1.10"
 from airflow.operators.docker_operator import DockerOperator
 ```
 
 > Why the difference?
-This version was in version 1.x. Airflow revamped its operators and third party operators have been moved to `airflow.providers` module.
+This version was in version 1.10. Airflow revamped its operators and third party operators have been moved to `airflow.providers` module. See this [documentation] (https://airflow.apache.org/docs/apache-airflow-providers/index.html) about the introduction of **Provider packages**.
 
 
 ## Selected parameters

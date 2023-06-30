@@ -1,6 +1,6 @@
 ---
 title:  "Using Docker with different directory access"
-date: 2023-06-27
+date: 2023-06-30
 tag: Development
 tags: [docker, bind, volume, python]
 description: How to give access to outside directory in Docker
@@ -14,7 +14,7 @@ This fact comes as the hurdle for many newcomers to Docker as it can't access th
 
 For instance, here is the default `FastAPI` **Dockerfile** (provided by FastAPI).
 
-```docker
+```docker filename="Dockerfile"
 FROM python:3.9
 WORKDIR /code
 COPY ./requirements.txt /code/requirements.txt
@@ -34,7 +34,7 @@ According to Docker official documentation, **bind** is what we need. Another op
 
 For simplicity, this can be done with `docker-compose.yaml`.
 
-```yaml
+```yaml filename="docker-compose.yaml"
 version: "3"
 services:
   fastapi-code:
