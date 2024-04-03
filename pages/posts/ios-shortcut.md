@@ -71,16 +71,16 @@ By splitting one huge workflow to several ones with accepting parameters from ot
 
 With the rigorous automation, this is the main runner for the automation. Previously, this included more than 60 actions inside.
 
-![Automation](/images/readwrite.png)
+![Automation](/images/shortcut-automation.png)
 
 ### Modules (Shortcuts)
 
 Here, shortcuts are what constitute the automation flow. As it can be seen from the number of actions, the automation is pretty operation-heavy.
 
-![Modules](/images/readwrite.png)
+![Modules](/images/shortcut-modules.png)
 
 ### Sample shortcut
 
 Just a small fraction of the heaviest module.
 
-![Shortcut](/images/readwrite.png)
+![Shortcut](/images/shortcut-flow.png)
