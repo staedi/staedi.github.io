@@ -126,27 +126,4 @@ agent.run(
 
 While the LLM is not guaranteed to output the same results, the following is one of such tries.
 
-```
-╭──────────────────────────────────────────────────── New run ────────────────────────────────────────────────────╮
-│                                                                                                                 │
-│ Could you give me the 118th number in the Fibonacci sequence?                                                   │
-│                                                                                                                 │
-╰─ LiteLLMModel - ollama_chat/qwen2.5-coder:7b-instruct ──────────────────────────────────────────────────────────╯
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- ─ Executing parsed code: ──────────────────────────────────────────────────────────────────────────────────────── 
-  def fibonacci(n, memo={}):                                                                                       
-      if n <= 0:                                                                                                   
-          return 0                                                                                                 
-      elif n == 1:                                                                                                 
-          return 1                                                                                                 
-      if n not in memo:                                                                                            
-          memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)                                                    
-      return memo[n]                                                                                               
-                                                                                                                   
-  fib_118 = fibonacci(117)                                                                                         
-  final_answer(fib_118)                                                                                            
- ───────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
-Out - Final answer: 1264937032042997393488322
-[Step 1: Duration 41.21 seconds| Input tokens: 2,150 | Output tokens: 135]
-1264937032042997393488322
-```
+![smolagents](/images/smolagents.png)

@@ -150,14 +150,14 @@ Error: Error: Failed to create deployment (status: 404) with build version . Ens
 
 Thankfully, [GitHub discussion](https://github.com/orgs/community/discussions/152695#discussioncomment-12421607) provides a mitigation, mentioning this should be a version issue with multiple packages with the action.
 
-Build
+**Build**
 ```
 actions/checkout@v3 => actions/checkout@v4
 actions/configure-pages@v3 => actions/configure-pages@v4
 actions/upload-pages-artifact@v2 => actions/upload-pages-artifact@v3
 ```
 
-Deploy
+**Deploy**
 ```
 actions/deploy-pages@v2 => actions/deploy-pages@v4
 ```
