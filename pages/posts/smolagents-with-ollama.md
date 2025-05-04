@@ -1,5 +1,5 @@
 ---
-title:  "Using `smolagents` on the Apple Silicon device"
+title:  "Using smolagents on the Apple Silicon device"
 date: 2025-03-22
 tag: NLP
 tags: [mlx, mps, transformer, ollama, apple, transformer, huggingface, smolagents, litellm]
