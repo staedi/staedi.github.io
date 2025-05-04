@@ -3,11 +3,7 @@ title:  "Debugging `RuntimeError: no running event loop` error within Streamlit 
 date: 2025-05-04
 tag: NLP
 tags: [streamlit, torch, llamaindex, smolagents, asyncio]
-description: A simple workaround to deal with the `RuntimeError: no running event loop` with a (possibly) multi-page Streamlit app
-
-```
-RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
-```
+description: A simple workaround to deal with the `RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_` with a (possibly) multi-page Streamlit app
 ---
 
 
