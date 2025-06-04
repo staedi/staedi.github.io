@@ -1,9 +1,9 @@
 ---
 title:  "Using ollama for AI Agents"
-date: 2025-05-25
+date: 2025-06-04
 tag: NLP
-tags: [ollama, agent, tool, vision]
-description: A simple instruction to Ollama focusing on the availabity of the tools and vision 
+tags: [ollama, agent, tool, vision, thinking]
+description: A simple instruction to Ollama focusing on the availabity of the tools, vision and thinking
 ---
 
 
@@ -38,7 +38,8 @@ In turn, using a **tool-capable** LLM models.
 
 ![](/images/ollama.png)
 
-While many of the models out there support tools.
 `Ollama` tags tool-capable models as `tools`, while one without that tag cannot be used to use tools in an AI Agents project.
 
-Also, among all the models, only `vision`-tagged models can handle such tasks.
+Additionally, for vision- or thinking-capable models, each is tagged as `vision` or `thinking`.
+
+For instance, `gemma3`, which is capable of visions is tagged as `vision` and `qwen3` is with `thinking`.
