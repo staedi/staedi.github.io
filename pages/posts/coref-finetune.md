@@ -1,5 +1,5 @@
 ---
-title:  "Fine-tuning open-source LLMs for Coreference Resolutiom task using `mlx-lm`"
+title:  "Fine-tuning open-source LLMs for Coreference Resolutiom task using [mlx-lm]"
 date: 2025-08-10
 tag: NLP
 tags: [NLP, spacy, spacy-experimental, coreference, llama, gemmma, mlx-lm, neuralcoref, lora]
