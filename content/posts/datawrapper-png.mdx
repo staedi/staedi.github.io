@@ -1,0 +1,38 @@
+---
+title:  "Embedding Datawrapper Chart #3 in static image (feat. MD)"
+date: 2023-03-12
+tag: Data Visualization
+tags: [next.js, datawrapper, github pages, md]
+description: How to embed Datawrapper Chart as in static image
+---
+
+Previously, in this [article](datawrapper-mdx), I showed how to embed [Datawrapper](https://datawrapper.de) chart using **responsive iframe**. 
+
+While, it's good to showcase an interactive chart to audience, it loads slowly compared to static image.
+
+
+## How to embed in static image?
+
+Compared to embedding script, this is fairly easy.
+
+First see the last script I used to embed **responsive iframe** in `MDX`. 
+
+```js showLineNumbers
+import Script from 'next/script'
+export const style = "width: 0; min-width: 100% !important; border: none;";
+<iframe title="Weighted Sentiment Scores (Exchange)" aria-label="Dot Plot" id="datawrapper-chart-0bwFo" src="https://datawrapper.dwcdn.net/0bwFo/1/" scrolling="no" frameBorder="0" style={{style}} height="495"></iframe>
+<Script src="http://datawrapper.dwcdn.net/lib/embed.min.js" />
+```
+
+For static image, it becomes one line with different href (*obviously*).
+
+```md
+![](https://datawrapper.dwcdn.net/0bwFo/full.png)
+```
+
+
+## How is it displayed in action?
+
+![](https://datawrapper.dwcdn.net/0bwFo/full.png)
+
+Voilà! 
