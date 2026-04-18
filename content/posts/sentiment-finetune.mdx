@@ -28,22 +28,22 @@ The main approach when I first floated the idea of multi-entity sentiment analys
 To simplify the sentence, I had organized the following structure.
 
 - Entity: (Subject and object)
-- Polarity: + / - / 0
+- Polarity: `+` / `-` / `0`
 - Direction of the polarity:
   - `Posline` (Positive/Positive): Both entities have the same directional polarity (positive)
   - `Pos` (Positive/Neutral): One of the entity has the positive polarity
   - `Over` (Positive/Negative): While the first entity is positive, latter has the negative polarity
-  - `Under (Negative/Positive): First entity has the negative polarity, while the latter is positive
+  - `Under` (Negative/Positive): First entity has the negative polarity, while the latter is positive
   - `Negline` (Negative/Negative): Both entities have the same directional polarity (negative)
   - `Neg` (Negative/Neutral): One of the entity has the negativ polarity
 - Category:
-  - Investments: Buy, Sell, IPO, Privatization, Invest, Bid
-  - Cooperation: Win-win situations (in-tandem)
-  - Family / Ownership: Same line of business (e.g., Franchise)
-  - Performance: Stock market performance
-  - Legal: File, [Sued / Indicted / Subpoenaed / Alleged] (by), Win, Lose  (***Bidirectional***)
-  - News release: Launch, Patent, Authorization
-  - Bankruptcy: Entered, Exited
+  - **Investments**: Buy, Sell, IPO, Privatization, Invest, Bid
+  - **Cooperation**: Win-win situations (in-tandem)
+  - **Family** / **Ownership**: Same line of business (e.g., Franchise)
+  - **Performance**: Stock market performance
+  - **Legal**: File, [Sued / Indicted / Subpoenaed / Alleged] (by), Win, Lose  (***Bidirectional***)
+  - **News release**: Launch, Patent, Authorization
+  - **Bankruptcy**: Entered, Exited
 
 
 ## Multi-entity sentiment analysis
@@ -53,8 +53,8 @@ As with the [coref](coref-finetune), time has changed and LLMs can help a lot wi
 The above definition came in handy for Claude to refine and generate datasets needed for the training process.
 
 - Entity: (Subject and object)
-- Polarity: + / - / 0 / ~
-- Category: Legal / Business / Performance / Recruitment / NewsRelease / Bankruptcy
+- Polarity: `+` / `-` / `0` / `~`
+- Category: **Legal** / **Business** / **Performance** / **Recruitment** / **NewsRelease** / **Bankruptcy**
 
 Sample dataset is as follows.
 
